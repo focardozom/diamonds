@@ -18,3 +18,4 @@ the_data |>
   labs(title = "Oh! Nice plot")
 ```
 
+Source at https://github.com/focardozom/diamonds
