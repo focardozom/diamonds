@@ -1,0 +1,20 @@
+---
+title: "My First Plot"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+```
+
+This plot was created at: `r format(Sys.time(), '%c')`
+
+```{r, echo=FALSE}
+the_data <- ggplot2::diamonds
+
+the_data |> 
+  ggplot(aes(carat, depth, color = color)) +
+  geom_point() +
+  labs(title = "Oh! Nice plot")
+```
+
